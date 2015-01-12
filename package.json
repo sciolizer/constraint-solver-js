@@ -1,0 +1,35 @@
+{
+  "name": "constraint-solver-js",
+  "version": "0.0.1",
+  "description": "A constraint satisfiability solver for finite domains",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "lsc -bc -o lib src",
+    "test": "mocha --require LiveScript --colors --reporter spec --compilers ls:node_modules/LiveScript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sciolizer/constraint-solver-js"
+  },
+  "keywords": [
+    "constraint",
+    "solver",
+    "satisfiability",
+    "SAT"
+  ],
+  "author": "Joshua Ball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sciolizer/constraint-solver-js/issues"
+  },
+  "homepage": "https://github.com/sciolizer/constraint-solver-js",
+  "devDependencies": {
+    "LiveScript": "^1.3.1",
+    "assert": "^1.3.0",
+    "deep-equal": "^0.2.1",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "prelude-ls": "^1.1.1"
+  }
+}
